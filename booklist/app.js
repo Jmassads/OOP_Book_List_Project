@@ -79,8 +79,12 @@ document.getElementById('book-form').addEventListener('submit', function (e) {
   // Instantiate book
   const book = new Book(title, author, isbn);
 
+  console.log(book);
+
   // Instantiate UI
   const ui = new UI();
+
+  console.log(ui);
 
   // Validate
 
@@ -115,6 +119,8 @@ document.getElementById('book-list').addEventListener('click', function (e) {
 
   // Instantiate UI
   const ui = new UI();
+
+  console.log(ui);
 
   // Delete book
   ui.deleteBook(e.target);
